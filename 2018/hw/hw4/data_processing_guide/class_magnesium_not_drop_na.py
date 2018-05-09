@@ -66,7 +66,7 @@ class Magnesium(object):
         if model is not None:
             self.model = model            
         else:
-            self.model = RandomForestClassifier(n_jobs=-1)
+            self.model = RandomForestClassifier(n_jobs=16)
         self.colours = colours
         self.model_name = str(self.model).split('(')[0]
         self.trained_model = None
